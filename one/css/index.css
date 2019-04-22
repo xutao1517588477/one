@@ -1,0 +1,349 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	width: 100%;
+	border: 0px;
+	position: relative;
+}
+#header img{
+	width: 100%;
+	/*这里不进行块状化会有5px的高度差异，因为图片按基线而不是父元素底部布局*/
+	/*display: block;*/
+	/*或者设置图像垂直对齐*/
+	vertical-align: bottom;
+}
+#header_header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+#header_header_btn{
+	width: 25%;
+	float: left;
+	/*自定义边框*/
+	border: 0px;
+	/*消除默认点击蓝色边框效果*/
+	outline: none;
+	background: #f8b239;
+	margin-top: -3rem;
+}
+#header_header_btn p{
+	color:#FFFFFF;
+}
+#header_header_ul{
+	width: 75%;
+	background: rgba(56,56,56,0.22);
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	padding-left: 1rem;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+#header_header_ul li{
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	margin:0.6rem 0;
+	margin-right: 5%;
+}
+#header_header_ul i{
+	color: #F8B239;
+}
+#header_header_nav.navbar{
+	width: 75%;
+	padding: 0;
+	background: rgba(8,8,8,0.5);
+}
+#header_header_nav_ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+#header_header_nav_ul li{
+	font-size: 1rem;
+	margin-right: 3%;
+	margin-top: 1rem;
+}
+header ul a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+header ul a:hover{
+	color: #F8B239;	
+}
+#header_section{
+	width: 40%;
+	background: rgba(8,8,8,0.7);
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	text-align: right;
+	padding: 3em;
+}
+@media screen and (min-width:1367px){
+	#header_header_btn{
+		font-size: 3rem;
+	}
+	#header_header_btn i{
+		font-size: 2.5rem;
+		transform: translate(-106px,47px) rotate(-31deg);
+	}
+	#header_section #p1{
+		font-size: 1.3rem;
+		line-height: 2.8rem;
+	}
+	#header_section #p2{
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width:1080px){
+	#header_section{
+		height: 42%;
+	}
+}
+@media screen and (max-width:1366px){
+	#header_header_btn{
+		font-size: 3rem;
+	}
+	#header_header_btn i{
+		font-size: 2.5rem;
+		transform: translate(-106px,47px) rotate(-31deg);
+	}
+	#header_section{
+    	padding: 0.5em 1em;
+	}
+	#header_section #p1{
+		font-size: 1.1rem;
+		line-height: 2.4rem;
+		margin-bottom: 0.55rem;
+	}
+	#header_section #p2{
+		font-size: 2.3rem;
+	}
+	#header_section #p3{
+    	font-size: 0.88rem;
+	}
+}
+@media screen and (max-width:1080px){
+	#header_header_btn{
+		font-size: 2.8rem;
+	}
+	#header_header_btn i{
+		font-size: 2.3rem;
+		transform: translate(-99px,44px) rotate(-31deg);
+	}
+	#header_section{
+    	padding: 0.5em 1em;
+	}
+	#header_section #p1{
+		font-size: 0.9rem;
+		line-height: 2.25rem;
+		margin-bottom: 0.5rem;
+	}
+	#header_section #p2{
+		font-size: 1.88rem;
+	}
+	#header_section #header_section_button{
+		margin-bottom: 2%;
+	}
+}
+@media screen and (max-width:900px){
+	#header_header_btn{
+		font-size: 2.5rem;
+	}
+	#header_header_btn i{
+		font-size: 2rem;
+		transform: translate(-88px,40px) rotate(-31deg);
+	}
+	#header_section{
+    	padding: 0.3em 0.65em;
+	}
+	#header_section #p1{
+		font-size: 0.8rem;
+		line-height: 2.2rem;
+		margin-bottom: 0.1rem;
+	}
+	#header_section #p2{
+		font-size: 1.56rem;
+		margin-bottom: 0.1rem;
+	}
+	#header_section #p3{
+		margin-top: 0.4rem;
+    	font-size: 0.8rem;
+    	line-height: 1.6rem;
+	}
+}
+@media screen and (max-width: 760px) {
+	#header_header_btn{
+		font-size: 1.9rem;
+	}
+	#header_header_btn i{
+		font-size: 1.4rem;
+		transform: translate(-66px,30px) rotate(-31deg);
+	}
+}
+@media screen and (max-width:600px){
+	#header_header_btn{
+		font-size: 1.6rem;
+	}
+	#header_header_btn i{
+		font-size: 1.1rem;
+		transform: translate(-56px,25px) rotate(-31deg);
+	}
+	#header_section{
+		width: 26%;
+		padding: 0.1em 0.9em;
+	}
+	#header_section #p1{
+		font-size: 0.7rem;
+		line-height: 1.9rem;
+	}
+	#header_section #p2{
+		font-size: 1.38rem;
+	}
+}
+@media screen and (max-width: 568px){
+	#header_section #p3{
+		margin-top: 0.38rem;
+		line-height: 1.4rem;
+	}
+}
+@media screen and (max-width: 480px){
+	#header_header_btn{
+		font-size: 1.3rem;
+	}
+	#header_header_btn i{
+		font-size: 0.8rem;
+		transform: translate(-47px,19px) rotate(-31deg);
+	}
+	#header_section{
+		width: 34%;
+	}
+}
+@media screen and (max-width: 320px) {
+	#header_header_btn{
+		font-size: 1rem;
+	}
+	#header_header_btn i{
+		font-size: 0.5rem;
+		transform: translate(-47px,19px) rotate(-31deg);
+	}
+	#header_section{
+    	padding: 0.7em 1em 1em;
+	}
+	#header_section #p3{
+		margin-top: 0.75rem;
+	}
+}
+#header_section #p1{
+	color: #fff;
+}
+#header_section #p2{
+	color: #fff;
+	line-height: 1.1;
+}
+#header_section #p3{
+	font-size: 0.88rem;
+	color: #c2f9c4;
+}
+#header_section_button{
+	/*自定义边框*/
+	border: 0px;
+	/*消除默认点击蓝色边框效果*/
+	outline: none;
+	width: 40%;
+	height: 20%;
+	font-size: 1.38rem;
+	background: #f8b239;
+}
+#header_section_button a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#header_section_button:hover{
+	background:#017785;
+}
+
+
+#section{
+	margin-top: 6%;
+}
+
+#section_header{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+#section_header #p4{
+	margin: auto 5%;
+	font-size: 2rem;
+	color: #000;
+}
+#section_header #p5{
+	margin: auto 5%;
+	font-size: 1.2rem;
+	color: #0177b5;
+}
+#section_header hr{
+	width: 10%;
+	height: 0.1em;
+	background-color: #212121;
+	margin: 1px auto;
+}
+#section_header #p6{
+	margin: auto 5%;
+	font-size: 1.2rem;
+	color: #F8B239;
+}
+#section_header_ul{
+	width: 100%;
+	background: #cceefc;
+	list-style-type: none;
+	margin-top:3rem;
+}
+#section_header_ul li{
+	height: 16rem;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (min-width:992px){
+	#section_header_ul li{
+		width: 25%;
+	}
+	#section_header_ul li+li{
+		border-left: 1px solid #a1e1f9;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#section_header_ul li:first-child{
+		border-right: 1px solid #a1e1f9;
+		border-bottom: 1px solid #a1e1f9;
+	}
+	#section_header_ul li:last-child{
+		border-left: 1px solid #a1e1f9;
+		border-top: 1px solid #a1e1f9;
+	}
+}
+@media screen and (max-width:767px){
+	#section_header_ul li+li{
+		border-top: 1px solid #a1e1f9;
+	}
+}
+#section_header_ul i{
+	font-size: 4rem;
+	color: #0177b5;
+}
+#section_header_ul li hr{
+	width: 8em;
+	height: 0.2em;
+	background-color: #F8B239;
+	margin: 1rem auto;
+}
