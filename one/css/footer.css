@@ -1,0 +1,159 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style: none;
+	margin-bottom: 0;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover{
+	text-decoration: none;
+	color: #F8B239;	
+}
+/*为部分响应式模块适配特殊屏幕分辨率下的样式*/
+@media screen and (min-width: 480px) {
+	#footer_footer>#footer_footer_ul2{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+/*为部分响应式模块适配特殊屏幕分辨率下的样式*/
+/*为部分响应式模块适配三种传统屏幕分辨率下的尺寸*/
+@media screen and (min-width:992px){
+	#footer_section>ul>li{
+		width: 25%;
+	}
+	#footer_footer>ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#footer_section>ul>li{
+		width: 50%;
+	}
+}
+@media screen and (max-width:767px){
+	#footer_section>ul>li{
+		width: 100%;
+	}
+}
+/*为部分响应式模块适配三种传统屏幕分辨率下的尺寸*/
+#footer{
+	width: 100%;
+	margin-top: 2rem;
+	text-align: center;
+	background: #0177B5;
+}
+#footer_header #p1{
+	font-size: 2rem;
+	color: #FFF;
+	margin-bottom: 0;
+}
+#footer_header #p2{
+	font-size: 1.2rem;
+	color: #000;
+}
+#footer_header hr{
+	width: 10%;
+	height: 0.1em;
+	background-color: #212121;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+#footer_section{
+	width: 60%;
+	margin: 0 auto;
+}
+#footer_section>ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#footer_section>ul>li{
+	list-style: none;
+	color: #FFFFFF;
+}
+#footer_section>ul>li>i{
+	width: 5rem;
+	height: 5rem;
+	font-size: 2rem;	
+	padding: 1.5rem 0;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	margin-bottom: 0.5rem;
+}
+#footer>hr{
+	width: 60%;
+	height: 0.1rem;
+	margin: 0 auto;
+	background: #016194;
+}
+#footer_footer{
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#footer_footer>ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 0;
+}
+#footer_footer>#footer_footer_ul1{
+	width:60%;
+	text-align: left;
+}
+#footer_footer>#footer_footer_ul1>li>a{
+	color:#000;
+	font-size: 1.2rem;
+}
+#footer_footer>#footer_footer_ul1>li>a:hover{
+	color:#fff;
+}
+#footer_footer>#footer_footer_ul2{
+	width: 32%;
+}
+#footer_footer>#footer_footer_ul2>li>i{
+	width: 2rem;
+	height: 2rem;
+	padding: 0.3rem 0;
+	color:#fff;
+	font-size: 1.4rem;
+	border:1px solid #FFFFFF;
+	border-radius: 50%;
+	//为小图标设置鼠标悬浮时背景色和边框色改变的由快到慢过渡
+	transition: all 1s ease-out;
+}
+#footer_footer>#footer_footer_ul2>li>i.fa-facebook:hover{
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+#footer_footer>#footer_footer_ul2>li>i.fa-twitter:hover{
+	background-color: #1da1f2;
+	border-color: #1da1f2;
+}
+#footer_footer>#footer_footer_ul2>li>i.fa-dribbble:hover{
+	background-color: #ea4c89;
+	border-color: #ea4c89;
+}
+#footer_footer>#footer_footer_ul2>li>i.fa-vimeo:hover{
+	background-color: #1ab7ea;
+	border-color: #1ab7ea;
+}
+#nav{
+	position: fixed;
+	bottom: 0;
+	right: 2rem;
+	font-size: 4rem;
+	color: #F8B239;
+	display: none;
+}

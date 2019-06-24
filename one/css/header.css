@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style: none;
+	margin-bottom: 0;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:hover{
+	text-decoration: none;
+	color: #F8B239;	
+}
+/*为部分响应式模块适配特殊屏幕分辨率下的样式*/
+@media screen and (min-width:1367px){
+	#header_header_btn{
+		font-size: 3rem;
+	}
+	#header_header_btn i{
+		font-size: 2.5rem;
+		transform: translate(-106px,47px) rotate(-31deg);
+	}
+}
+@media screen and (max-width:1366px){
+	#header_header_btn{
+		font-size: 3rem;
+	}
+	#header_header_btn i{
+		font-size: 2.5rem;
+		transform: translate(-106px,47px) rotate(-31deg);
+	}
+}
+@media screen and (max-width:1080px){
+	#header_header_btn{
+		font-size: 2.8rem;
+	}
+	#header_header_btn i{
+		font-size: 2.3rem;
+		transform: translate(-99px,44px) rotate(-31deg);
+	}
+}
+@media screen and (max-width:900px){
+	#header_header_btn{
+		font-size: 2.5rem;
+	}
+	#header_header_btn i{
+		font-size: 2rem;
+		transform: translate(-88px,40px) rotate(-31deg);
+	}
+}
+@media screen and (max-width: 760px) {
+	#header_header_btn{
+		font-size: 1.9rem;
+	}
+	#header_header_btn i{
+		font-size: 1.4rem;
+		transform: translate(-66px,30px) rotate(-31deg);
+	}
+}
+@media screen and (max-width:600px){
+	#header_header_btn{
+		font-size: 1.6rem;
+	}
+	#header_header_btn i{
+		font-size: 1.1rem;
+		transform: translate(-56px,25px) rotate(-31deg);
+	}
+}
+@media screen and (max-width: 480px){
+	#header_header_btn{
+		font-size: 1.3rem;
+	}
+	#header_header_btn i{
+		font-size: 0.8rem;
+		transform: translate(-47px,19px) rotate(-31deg);
+	}
+}
+@media screen and (max-width: 320px) {
+	#header_header_btn{
+		font-size: 1rem;
+	}
+	#header_header_btn i{
+		font-size: 0.5rem;
+		transform: translate(-47px,19px) rotate(-31deg);
+	}
+}
+/*为部分响应式模块适配特殊屏幕分辨率下的样式*/
+#header{
+	width: 100%;
+	height: 18rem;
+	border: 0px;
+	position: relative;
+}
+#header img{
+	width: 100%;
+	/*这里不进行块状化会有5px的高度差异，因为图片按基线而不是父元素底部布局*/
+	/*display: block;*/
+	/*或者设置图像垂直对齐*/
+	position: absolute;
+	bottom: 0;
+}
+
+#header_header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+#header_header_btn{
+	width: 25%;
+	float: left;
+	/*自定义边框*/
+	border: 0px;
+	/*消除默认点击蓝色边框效果*/
+	outline: none;
+	background: #f8b239;
+	margin-top: -3rem;
+}
+#header_header_btn p{
+	color:#FFFFFF;
+}
+#header_header_ul{
+	width: 75%;
+	background: rgba(56,56,56,0.22);
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	padding-left: 1rem;
+	box-sizing: border-box;
+}
+#header_header_ul li{
+	color: #FFFFFF;
+	font-size: 1.2rem;
+	margin:0.6rem 0;
+	margin-right: 5%;
+}
+#header_header_ul i{
+	color: #F8B239;
+}
+#header_header_nav.navbar{
+	width: 75%;
+	padding: 0;
+	background: rgba(8,8,8,0.5);
+}
+#header_header_nav_ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0;
+	box-sizing: border-box;
+}
+#header_header_nav_ul li{
+	font-size: 1rem;
+	margin-right: 3%;
+	margin-top: 1rem;
+}
