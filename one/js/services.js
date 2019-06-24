@@ -1,0 +1,10 @@
+window.onload=function(){
+	$("#section_section>li.intro_card").mouseenter(function(){
+		$(this).css("border-width","0");		
+		$(this).children("div").css({"width":"100%","height":"100%"});
+	});
+	$("#section_section>li.intro_card").mouseleave(function(){
+		$(this).css("border-width","1");
+		$(this).children("div").css({"width":"0","height":"0"});
+	});
+};

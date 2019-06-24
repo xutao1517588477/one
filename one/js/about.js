@@ -1,0 +1,16 @@
+$(window).load(function(){
+	$("#mail_button").click(function(){
+		open("contact.html","_self")
+	});
+	$("#section_section_intro>li").mouseenter(function(){
+		$(this).children(".section_section_intro_div").css("display","block");
+		//不写在移除事件里是为了退出动画效果
+		$(this).siblings().children(".section_section_intro_div").css("display","none");
+		$(this).children(".section_section_intro_div").removeClass("fadeOD");
+		$(this).children(".section_section_intro_div").addClass("fadeID");
+	});
+	$("#section_section_intro>li").mouseleave(function(){
+		$(this).children(".section_section_intro_div").removeClass("fadeID");
+		$(this).children(".section_section_intro_div").addClass("fadeOD");
+	});
+});
